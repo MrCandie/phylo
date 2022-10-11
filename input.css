@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+  background-image: url("../images/bg-curvy-phone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}

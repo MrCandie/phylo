@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+    <title>Fylo</title>
+  </head>
+  <body class="dark:bg-darkBlue dark:text-white">
+    <div class="w-full mx-auto p-4">
+      <!-- header container -->
+      <div
+        class="flex flex-col items-center justify-center mt-10 px-24 md:justify-between space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+      >
+        <!-- logo -->
+        <div>
+          <img src="images/logo.svg" alt="" />
+        </div>
+        <!-- menu -->
+        <div class="flex items-center space-x-6">
+          <a href="#" class="text-lg font-normal hover:text-accentBlue"
+            >Features</a
+          >
+          <a href="#" class="text-lg hover:text-accentBlue font-normal"
+            >Testimonials</a
+          >
+          <!-- Dark/Light Mode Button -->
+          <button
+            id="theme-toggle"
+            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2 5"
+          >
+            <!-- Dark SVG Icon -->
+            <svg
+              id="theme-toggle-dark-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              ></path>
+            </svg>
+            <!-- Light SVG Icon -->
+            <svg
+              id="theme-toggle-light-icon"
+              class="w-5 h-5 hidden"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- hero section -->
+      <section id="hero">
+        <div class="flex flex-col space-y-12 mt-10">
+          <!-- image -->
+          <div class="w-1/2 mx-auto">
+            <img class="w-full" src="images/illustration-intro.png" alt="" />
+          </div>
+          <!-- content -->
+          <div
+            class="flex flex-col w-full items-center justify-center md:w-1/2 mx-auto space-y-10"
+          >
+            <h2 class="text-3xl w-full text-center font-bold">
+              All your files in one secure location, accessible anywhere
+            </h2>
+            <p class="text gray-200 text-lg text-center max-w-full md:max-w-sm">
+              Fylo Stores All Your Most Important Files In One Secure Location.
+              Access Them Wherever You Need, Share And Collaborate With Friends,
+              Family And Co-Worker
+            </p>
+            <button
+              class="text-black font-bold rounded-full text-center py-4 px-8 bg-accentCyan hover:scale-95 duration-500 hover:shadow-lg"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- features section -->
+      <section class="bg-gray-50 dark:bg-darkBlue1" id="features">
+        <div
+          class="flex flex-col w-full md:w-[80%] mx-auto space-y-20 mt-20 p-14 px-20"
+        >
+          <!-- box container 2 -->
+          <div
+            class="flex flex-col items-center md:justify-between justify-center space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- box 3 -->
+            <div class="flex flex-col space-y-6">
+              <!-- image -->
+              <div class="flex items-center justify-center">
+                <img src="images/icon-access-anywhere.svg" alt="" />
+              </div>
+              <h2 class="text-2xl font-bold text-center">
+                Security you can trust
+              </h2>
+              <p class="text-lg text-center max-w-full md:max-w-md font-normal">
+                The Ability To Use A Smartphone, Tablet, Or Computer To Access
+                Your Account Means Your Files Follow You Everywhere.
+              </p>
+            </div>
+            <!-- box 4 -->
+            <div class="flex flex-col space-y-6">
+              <!-- image -->
+              <div class="flex items-center justify-center">
+                <img src="images/icon-collaboration.svg" alt="" />
+              </div>
+              <h2 class="text-2xl font-bold text-center">
+                Access your file from anywhere
+              </h2>
+              <p class="text-lg text-center max-w-md font-normal">
+                The Ability To Use A Smartphone, Tablet, Or Computer To Access
+                Your Account Means Your Files Follow You Everywhere.
+              </p>
+            </div>
+          </div>
+          <!-- box container 2 -->
+          <div
+            class="flex flex-col items-center md:justify-between justify-center space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- box 1 -->
+            <div class="flex flex-col space-y-6">
+              <!-- image -->
+              <div class="flex items-center justify-center">
+                <img src="images/icon-access-anywhere.svg" alt="" />
+              </div>
+              <h2 class="text-2xl font-bold text-center">
+                Security you can trust
+              </h2>
+              <p class="text-lg text-center max-w-md font-normal">
+                The Ability To Use A Smartphone, Tablet, Or Computer To Access
+                Your Account Means Your Files Follow You Everywhere.
+              </p>
+            </div>
+            <!-- box 2 -->
+            <div class="flex flex-col space-y-6">
+              <!-- image -->
+              <div class="flex items-center justify-center">
+                <img src="images/icon-collaboration.svg" alt="" />
+              </div>
+              <h2 class="text-2xl font-bold text-center">
+                Access your file from anywhere
+              </h2>
+              <p class="text-lg max-w-md text-center font-normal">
+                The Ability To Use A Smartphone, Tablet, Or Computer To Access
+                Your Account Means Your Files Follow You Everywhere.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- productive section -->
+      <section id="productive">
+        <div
+          class="mt-20 flex flex-col space-y-10 md:flex-row md:space-y-0 md:space-x-8 p-10"
+        >
+          <!-- image -->
+          <div class="mx-auto">
+            <img src="images/illustration-stay-productive.png" alt="" />
+          </div>
+          <!-- content -->
+          <div class="flex flex-col pt-10 space-y-4 w-full md:w-1/2 mx-auto">
+            <h2
+              class="text-4xl font-bold text-center max-w-full md:max-w-[50%] md:text-left"
+            >
+              Stay Productive wherever you are
+            </h2>
+            <p class="text-md items-start font-normal">
+              Never Let Location Be An Issue When Accessing Your Files. Fyle Has
+              You Covered For All Of Your File Storage Needs
+            </p>
+            <p class="text-md items-start font-normal">
+              Securely Share Files And Folder With Friends, Family And
+              Colleagues For Live Collaboration. No Email Attachments Required
+            </p>
+            <a href="" class="text-accentBlue font-bold underline text-md"
+              >See How Fylo Works &rarr;</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- testimonial section -->
+      <section id="testimonials">
+        <div class="relative w-full pb-52 bg-gray-50 dark:bg-darkBlue1">
+          <!-- testimonial container -->
+
+          <div
+            class="relative flex flex-col space-y-8 md:flex-row md:space-y-0 md:space-x-8 w-[80%] mx-auto pt-12"
+          >
+            <img
+              src="images/bg-quotes.png"
+              class="w-20 absolute top-4 md:-top-4 md:left-8"
+              alt=""
+            />
+            <!-- testimonial 1 -->
+            <div
+              class="flex flex-col bg-gray-200 dark:bg-darkBlue2 rounded-lg space-y-4 w-full p-10"
+            >
+              <p class="para-1 text-sm line-clamp-1">
+                Fylo Has Imprroved Our Team Productivity By An Order Of
+                Magnitude. Since Making The Switch Our Team Has Become A Well
+                Oiled Collaboration Machine
+              </p>
+              <a
+                data-para="1"
+                class="read-more text-accentBlue hover:text-darkBlue2 underline text-sm font-bold"
+                href="#"
+                >Read More</a
+              >
+              <div class="flex space-x-4">
+                <img
+                  src="images/profile-1.jpg"
+                  class="w-10 rounded-full h-10"
+                  alt=""
+                />
+                <div class="flex flex-col space-y-0.5">
+                  <h4 class="text-sm font-bold">Satish Patel</h4>
+                  <p class="text-xs">Founder & CEO Huddle</p>
+                </div>
+              </div>
+            </div>
+            <!-- testimonial 2 -->
+            <div
+              class="flex flex-col bg-gray-200 dark:bg-darkBlue2 rounded-lg space-y-6 w-full p-10"
+            >
+              <p class="para-2 text-sm line-clamp-1">
+                Fylo Has Imprroved Our Team Productivity By An Order Of
+                Magnitude. Since Making The Switch Our Team Has Become A Well
+                Oiled Collaboration Machine
+              </p>
+              <a
+                data-para="2"
+                class="read-more text-accentBlue hover:text-darkBlue1 underline text-sm font-bold"
+                href="#"
+                >Read More</a
+              >
+              <div class="flex space-x-4">
+                <img
+                  src="images/profile-2.jpg"
+                  class="w-10 rounded-full h-10"
+                  alt=""
+                />
+                <div class="flex flex-col space-y-0.5">
+                  <h4 class="text-sm font-bold">Satish Patel</h4>
+                  <p class="text-xs">Founder & CEO Huddle</p>
+                </div>
+              </div>
+            </div>
+            <!-- testimonial 3 -->
+            <div
+              class="flex flex-col bg-gray-200 dark:bg-darkBlue2 rounded-lg space-y-6 w-full p-10"
+            >
+              <p class="para-3 text-sm line-clamp-1">
+                Fylo Has Imprroved Our Team Productivity By An Order Of
+                Magnitude. Since Making The Switch Our Team Has Become A Well
+                Oiled Collaboration Machine
+              </p>
+              <a
+                data-para="3"
+                class="read-more text-accentBlue hover:text-darkBlue2 underline text-sm font-bold"
+                href="#"
+                >Read More</a
+              >
+              <div class="flex space-x-4">
+                <img
+                  src="images/profile-3.jpg"
+                  class="w-10 rounded-full h-10"
+                  alt=""
+                />
+                <div class="flex flex-col space-y-0.5">
+                  <h4 class="text-sm font-bold">Satish Patel</h4>
+                  <p class="text-xs">Founder & CEO Huddle</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- early access section -->
+      <section id="early-access" class="relative">
+        <div
+          class="flex items-center justify-center lg:absolute lg:-top-24 lg:left-72 lg:ml-44 bg-gray-300 mt-20 w-full md:w-[80%] lg:w-1/2 mx-auto p-8 rounded-lg dark:bg-darkBlue2"
+        >
+          <div class="flex flex-col space-y-10">
+            <h2 class="text-xl font-bold text-center">
+              Get early access today
+            </h2>
+            <p class="text-sm text-center font-semibold">
+              It only takes a minute to sign up and our free starter tier is
+              extremely generous. If you have any questions, our support team
+              would be happy to help you.
+            </p>
+            <div
+              class="flex w-full flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+            >
+              <div class="w-full md:flex-1">
+                <input
+                  class="py-3 focus:outline-none text-black rounded-full text-center w-full placeholder:pl-6"
+                  type="text"
+                  placeholder="example@email.com"
+                />
+              </div>
+              <button
+                class="w-full md:w-1/4 rounded-full dark:text-darkBlue2 py-3 font-semibold hover:scale-95 duration-500 hover:shadow-lg bg-accentCyan"
+              >
+                Get Started For Free
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer section -->
+      <footer id="footer" class="relative">
+        <div
+          class="flex bg-darkBlue dark:bg-darkBlue2 py-16 px-20 mt-48 md:mt-72 flex-col space-y-20 items-start md:items-center justify-start md:justify-between md:flex-row md:space-y-0 md:space-x-10"
+        >
+          <!-- menu 1 -->
+          <div class="flex flex-col space-y-6">
+            <div class="flex space-x-4">
+              <img src="images/icon-phone.svg" alt="" />
+              <p class="text-lg text-white">+1-543-123-4567</p>
+            </div>
+            <div class="flex space-x-4">
+              <img src="images/icon-email.svg" alt="" />
+              <p class="text-lg text-white">example@fylo.com</p>
+            </div>
+          </div>
+          <!-- menu 2 -->
+          <div
+            class="flex flex-col space-y-12 md:flex-row md:space-y-0 md:space-x-16"
+          >
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="text-white text-lg font-bold">About</a>
+              <a href="#" class="text-white text-lg font-bold">Jobs</a>
+              <a href="#" class="text-white text-lg font-bold">Press</a>
+              <a href="#" class="text-white text-lg font-bold">Blog</a>
+            </div>
+            <div class="flex flex-col space-y-4">
+              <a href="#" class="text-white text-lg font-bold">Contact Us</a>
+              <a href="#" class="text-white text-lg font-bold">Privacy</a>
+              <a href="#" class="text-white text-lg font-bold">Terms</a>
+            </div>
+          </div>
+          <!-- menu 3 -->
+          <div class="hidden text-center md:flex space-x-4">
+            <div
+              class="flex items-center justify-center w-8 h-8 bg-gray-50 bg-opacity-20 rounded-full"
+            >
+              <img src="images/facebook.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-center w-8 h-8 bg-gray-50 bg-opacity-20 rounded-full"
+            >
+              <img src="images/twitter.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-center w-8 h-8 bg-gray-50 bg-opacity-20 rounded-full"
+            >
+              <img src="images/instagram.svg" alt="" />
+            </div>
+          </div>
+          <!-- menu 4 -->
+          <div
+            class="flex md:hidden text-center space-x-4 sm:absolute sm:bottom-0 sm:left-72 sm:pb-4"
+          >
+            <div
+              class="flex items-center justify-center w-8 h-8 bg-gray-50 bg-opacity-20 rounded-full"
+            >
+              <img src="images/facebook.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-center w-8 h-8 bg-gray-50 bg-opacity-20 rounded-full"
+            >
+              <img src="images/twitter.svg" alt="" />
+            </div>
+            <div
+              class="flex items-center justify-center w-8 h-8 bg-gray-50 bg-opacity-20 rounded-full"
+            >
+              <img src="images/instagram.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
